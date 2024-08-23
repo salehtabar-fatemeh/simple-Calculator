@@ -64,12 +64,49 @@
         input.addEventListener("keypress", function (e) {
           if (e.key == "=") e.preventDefault();
         });
-
-        </script>
-       
-    
-
-
-    
+        input.addEventListener("keydown", function (e) {
+        if (
+          e.key == "a" ||
+          e.key == "b" ||
+          e.key == "c" ||
+          e.key == "d" ||
+          e.key == "e" ||
+          e.key == "f" ||
+          e.key == "g"
+        ) {
+          e.preventDefault();
+        } else if (
+          e.key == "h" ||
+          e.key == "i" ||
+          e.key == "j" ||
+          e.key == "k" ||
+          e.key == "l" ||
+          e.key == "m" ||
+          e.key == "n"
+        ) {
+          e.preventDefault();
+        } else if (
+          e.key == "o" ||
+          e.key == "p" ||
+          e.key == "q" ||
+          e.key == "r" ||
+          e.key == "s" ||
+          e.key == "t" ||
+          e.key == "u"
+        ) {
+          e.preventDefault();
+        } else if (
+          e.key == "v" ||
+          e.key == "w" ||
+          e.key == "x" ||
+          e.key == "y" ||
+          e.key == "z"
+        ) {
+          e.preventDefault();
+        } else if (e.key == "=") {
+          input.value = math.evaluate(input.value);
+        }
+      });
+        </script> 
 </body>
 </html>
